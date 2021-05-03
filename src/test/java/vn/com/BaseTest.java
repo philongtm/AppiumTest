@@ -13,7 +13,7 @@ import java.net.URL;
  */
 public abstract class BaseTest {
 
-    private static AppiumDriverLocalService service;
+    static AppiumDriverLocalService service;
     AppiumServiceBuilder builder;
 
     @BeforeSuite
@@ -36,5 +36,4 @@ public abstract class BaseTest {
     public URL getServiceUrl() {
         return service.getUrl();
     }
-
 }
